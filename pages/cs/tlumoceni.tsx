@@ -4,7 +4,7 @@ import { NextPage } from 'next';
 
 const Index: NextPage = () => (
   <Layout language="cs">
-    <h1 className="title">Podmínky a ceny</h1>
+    <h1 className="title">Tlumočení</h1>
   </Layout>
 );
 

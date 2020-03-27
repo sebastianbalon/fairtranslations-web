@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NextPage } from 'next';
 import { useRouter } from "next/router";
-import Layout from "../components/Layout/Layout";
+import Layout from "../../components/Layout/Layout";
 
 const Index: NextPage<{}> = () => {
   const router = useRouter();
@@ -12,7 +12,7 @@ const Index: NextPage<{}> = () => {
 
   return (
     <Layout language="cs">
-      <progress className="progress is-medium is-dark" max="100">100%</progress>
+      <progress className="progress is-medium is-dark" max="100">Načítání</progress>
     </Layout>
   );
 };

@@ -2,7 +2,7 @@ const withSass = require('@zeit/next-sass');
 const withCss = require('@zeit/next-css');
 
 module.exports = {
-  exportTrailingSlash: true,
+  exportTrailingSlash: false,
   /*exportPathMap: () => ({
     '/p/o-firme': { page: '/p/o-firme' }
   }),*/

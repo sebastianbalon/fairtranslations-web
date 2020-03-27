@@ -3,8 +3,8 @@ import Layout from '../../components/Layout/Layout';
 import { NextPage } from 'next';
 
 const Index: NextPage = () => (
-  <Layout language="cs">
-    <h1 className="title">Podmínky a ceny</h1>
+  <Layout language="pl">
+    <h1 className="title">Pośrednictwo w rozmowach telefonicznych</h1>
   </Layout>
 );
 
