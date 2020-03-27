@@ -1,61 +1,59 @@
 import React from 'react';
-import Link from 'next/link';
 import { NextPage } from "next";
+import NavbarLink from "./NavbarLink/NavbarLink";
+import NavbarDropdown from "./NavbarDropdown/NavbarDropdown";
 
-const Header: NextPage = () => (
+interface Props extends React.HTMLProps<HTMLDivElement> {
+  language: 'cs' | 'pl';
+}
+
+const Header: NextPage<Props> = (props: Props) => (
   <>
   <nav className="navbar is-white">
     <div className="navbar-brand">
-      <a className="navbar-item" href="/">
+      <a className="" href="/">
         <img src="/images/logo1.svg" alt="FairTranslations | Mgr. Jolanta Tarabová" width="331" height="85" />
       </a>
     </div>
 
     <div className="navbar-menu">
       <div className="navbar-end">
+        {props.language === 'cs' ? (
+          <>
+            <NavbarLink href="/cs/o-firme">O firmě</NavbarLink>
+            <NavbarDropdown title="Překlady a tlumočení">
+              <NavbarLink href="/cs/preklady">Překlady</NavbarLink>
+              <NavbarLink href="/cs/tlumoceni">Tlumočení</NavbarLink>
+            </NavbarDropdown>
+            <NavbarDropdown title="Jiné služby">
+              <NavbarLink href="/cs/zprostredkovani-sluzby-telefonovani-do-polska">Zprostředkování služby telefonování do Polska</NavbarLink>
+              <NavbarLink href="/cs/podpora-podnikatelum">Podpora podnikatelům</NavbarLink>
+              <NavbarLink href="/cs/zalozeni-firmy-v-polsku">Založení firmy v Polsku</NavbarLink>
+            </NavbarDropdown>
+            <NavbarLink href="/cs/podminky-a-ceny">Podmínky a ceny</NavbarLink>
+            <NavbarLink href="/cs/kontakt">Kontakt</NavbarLink>
+          </>
+          ) : (
+          <>
+            <NavbarLink href="/pl/o-firmie">O firmie</NavbarLink>
+            <NavbarDropdown title="Tłumaczenia ustne i pisemne">
+              <NavbarLink href="/pl/tlumaczenia-pisemne">Tłumaczenia pisemne</NavbarLink>
+              <NavbarLink href="/pl/tlumaczenia-ustne">Tłumaczenia ustne</NavbarLink>
+            </NavbarDropdown>
+            <NavbarDropdown title="Inne usługi">
+              <NavbarLink href="/pl/posrednictwo-w-rozmowach-telefonicznych">Pośrednictwo w rozmowach telefonicznych</NavbarLink>
+              <NavbarLink href="/pl/wsparcie-dla-osob-prowadzacych-dzialalnosc">Wsparcie dla osób prowadzących działalność</NavbarLink>
+            </NavbarDropdown>
+            <NavbarLink href="/pl/warunki-i-ceny">Warunki i ceny</NavbarLink>
+            <NavbarLink href="/pl/kontakt">Kontakt</NavbarLink>
+          </>
+          )}
 
-        <Link href="/p/o-firme">
-          <a className="navbar-item">O firmě</a>
-        </Link>
-
-        <div className="navbar-item has-dropdown is-hoverable">
-          <a className="navbar-link">Překlady a tlumočení</a>
-
-          <div className="navbar-dropdown">
-            <Link href="/p/preklady"><a className="navbar-item">Překlady</a></Link>
-            <Link href="/p/tlumoceni"><a className="navbar-item">Tlumočení</a></Link>
-          </div>
-        </div>
-
-        <div className="navbar-item has-dropdown is-hoverable">
-          <a className="navbar-link">Jiné služby</a>
-
-          <div className="navbar-dropdown">
-            <Link href="/p/zprostredkovani-sluzby-telefonovani-do-polska"><a className="navbar-item">Zprostředkování služby telefonování do Polska</a></Link>
-            <Link href="/p/podpora-podnikatelum"><a className="navbar-item">Podpora podnikatelům</a></Link>
-            <Link href="/p/zalozeni-firmy-v-polsku"><a className="navbar-item">Založení firmy v Polsku</a></Link>
-          </div>
-        </div>
-
-        <Link href="/p/podminky-a-ceny">
-          <a className="navbar-item">Podmínky a ceny</a>
-        </Link>
-
-        <Link href="/p/kontakt">
-          <a className="navbar-item">Kontakt</a>
-        </Link>
-
-        <Link href="/cs">
-          <a className="navbar-item"><img src="/images/flag-cz.svg" width="28" height="21" /></a>
-        </Link>
-
-        <Link href="/pl">
-          <a className="navbar-item"><img src="/images/flag-pl.svg" width="28" height="21" /></a>
-        </Link>
+        <NavbarLink href="/cs"><img src="/images/flag-cz.svg" width="28" height="21" /></NavbarLink>
+        <NavbarLink href="/pl"><img src="/images/flag-pl.svg" width="28" height="21" /></NavbarLink>
       </div>
     </div>
   </nav>
-  <hr className="navbar-divider" />
   </>
 );
 

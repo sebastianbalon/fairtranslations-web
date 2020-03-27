@@ -6,7 +6,7 @@ const Index: NextPage<{}> = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/p/o-firme');
+    router.push('/cs/o-firme');
   }, []);
 
   return null;
