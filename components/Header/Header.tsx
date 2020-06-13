@@ -39,8 +39,8 @@ const Header: NextPage<Props> = (props: Props) => {
                   <NavbarLink href="/cs/podpora-podnikatelum">Podpora podnikatelům</NavbarLink>
                   <NavbarLink href="/cs/zalozeni-firmy-v-polsku">Založení firmy v Polsku</NavbarLink>
                 </NavbarDropdown>
-                <NavbarLink href="/cs/podminky-a-ceny">Podmínky a ceny</NavbarLink>
-                <NavbarLink href="/cs/kontakt">Kontakt</NavbarLink>
+                <NavbarLink href="/cs/podminky">Podmínky</NavbarLink>
+                <NavbarLink href="/cs/cenik">Ceník</NavbarLink>
               </>
             ) : (
               <>
