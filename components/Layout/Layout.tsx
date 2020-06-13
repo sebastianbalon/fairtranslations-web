@@ -4,7 +4,7 @@ import Head from "next/head";
 import '../../styles/styles.sass';
 import '../../styles/styles.css';
 import { NextPage } from "next";
-import Footer from "../Footer/Footer";
+import Card from "../Card/Card";
 
 interface Props extends React.HTMLProps<HTMLDivElement> {
   language: 'cs' | 'pl';
@@ -22,12 +22,15 @@ const Layout: NextPage<Props> = (props: Props) => (
     <hr className="navbar-divider" />
 
     <section className="section">
-      <div className="container is-fluid">{props.children}</div>
+      <div className="columns">
+        <div className="column is-one-third">
+          <Card language={props.language} />
+        </div>
+        <div className="column">
+          {props.children}
+        </div>
+      </div>
     </section>
-
-    <hr className="navbar-divider" />
-
-    <Footer />
   </>
 );
 
