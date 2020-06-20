@@ -14,7 +14,7 @@ const Index: NextPage = () => (
 
       <p>Cena překladu se odvíjí také od určení druhu textu: obyčejný, pro potřeby firem a osob, nebo text určený k publikaci, tisku apod., umístění na web apod.</p>
 
-      <strong>Slevy:</strong>
+      <h2 className="subtitle is-5">Slevy</h2>
       <p>V případě dlouhodobé spolupráce a určitých měsíčních obratů nabízím slevy.</p>
 
       <p>Účtovací jednotkou je normostrana, tj. 1 800 znaků ve Wordu.

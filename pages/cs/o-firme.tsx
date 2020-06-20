@@ -6,9 +6,8 @@ import {NextPage} from 'next';
 
 const Index: NextPage = () => (
   <Layout language="cs">
-    <h1 className="title">O firmě</h1>
-
     <div className="content">
+      <h1 className="title is-3">O firmě</h1>
       <p>Vítejte na mých stránkách,</p>
 
       <p>jmenuji se Jolanta Tarabová. Překladům a tlumočení se věnuji více než 10 let, a to od roku 1999. V letech

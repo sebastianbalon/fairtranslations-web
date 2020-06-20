@@ -29,15 +29,14 @@ const Header: NextPage<Props> = (props: Props) => {
             {props.language === 'cs' ? (
               <>
                 <NavbarLink href="/cs/o-firme">O firmě</NavbarLink>
-                <NavbarDropdown title="Překlady a tlumočení">
+                <NavbarDropdown title="Překlady a tlumočení" href="/cs/preklady">
                   <NavbarLink href="/cs/preklady">Překlady</NavbarLink>
                   <NavbarLink href="/cs/tlumoceni">Tlumočení</NavbarLink>
                 </NavbarDropdown>
-                <NavbarDropdown title="Jiné služby">
+                <NavbarDropdown title="Jiné služby" href="/cs/zprostredkovani-sluzby-telefonovani-do-polska">
                   <NavbarLink href="/cs/zprostredkovani-sluzby-telefonovani-do-polska">Zprostředkování služby
                     telefonování do Polska</NavbarLink>
-                  <NavbarLink href="/cs/podpora-podnikatelum">Podpora podnikatelům</NavbarLink>
-                  <NavbarLink href="/cs/zalozeni-firmy-v-polsku">Založení firmy v Polsku</NavbarLink>
+                  <NavbarLink href="/cs/podpora-podnikani-v-polsku">Podpora podnikání v Polsku</NavbarLink>
                 </NavbarDropdown>
                 <NavbarLink href="/cs/podminky">Podmínky</NavbarLink>
                 <NavbarLink href="/cs/cenik">Ceník</NavbarLink>
