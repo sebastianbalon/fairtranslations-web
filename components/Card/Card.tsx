@@ -34,7 +34,13 @@ const Card: React.FC<Props> = (props: Props) => {
         <figure className="image">
           <SwitchTransition>
             <CSSTransition key={imageSrc} classNames="fade" timeout={300}>
-              <img key="image" src={imageSrc} width="100%" height="100%" className="rounded-corners-top" />
+              <img
+                key="image"
+                src={imageSrc}
+                width="100%"
+                height="100%"
+                className="rounded-corners-top"
+              />
             </CSSTransition>
           </SwitchTransition>
         </figure>
