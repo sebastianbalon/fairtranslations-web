@@ -49,20 +49,33 @@ const Card: React.FC<Props> = (props: Props) => {
         </div>
 
         <div className="content">
-          <strong>Jsem plátce DPH</strong>
+          <strong>
+            {props.language === "cs"
+              ? "Jsem plátce DPH"
+              : "Jestem płatnikiem VAT"}
+          </strong>
           <br />
           <br />
           <div className="table-container">
             <table className="table is-fullwidth is-narrow is-striped">
               <tbody>
-                <tr>
-                  <th>IČ</th>
-                  <td>75089726</td>
-                </tr>
-                <tr>
-                  <th>Datová schránka</th>
-                  <td>5qmpu47</td>
-                </tr>
+                {props.language === "cs" ? (
+                  <tr>
+                    <th>IČ</th>
+                    <td>75089726</td>
+                  </tr>
+                ) : (
+                  <tr>
+                    <th>Regon</th>
+                    <td>75089726</td>
+                  </tr>
+                )}
+                {props.language === "cs" && (
+                  <tr>
+                    <th>Datová schránka</th>
+                    <td>5qmpu47</td>
+                  </tr>
+                )}
                 <tr>
                   <th>Tel.</th>
                   <td>+420 737 96 13 76</td>
