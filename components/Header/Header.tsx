@@ -58,7 +58,10 @@ const Header: NextPage<Props> = (props: Props) => {
             ) : (
               <>
                 <NavbarLink href="/pl/o-firmie">O firmie</NavbarLink>
-                <NavbarDropdown title="Tłumaczenia ustne i pisemne">
+                <NavbarDropdown
+                  title="Tłumaczenia ustne i pisemne"
+                  href="/pl/tlumaczenia-pisemne"
+                >
                   <NavbarLink href="/pl/tlumaczenia-pisemne">
                     Tłumaczenia pisemne
                   </NavbarLink>
@@ -77,10 +80,10 @@ const Header: NextPage<Props> = (props: Props) => {
                     Wsparcie dla polskich przedsiębiorców w Czechach
                   </NavbarLink>
                 </NavbarDropdown>
-                <NavbarLink href="/pl/warunki-i-ceny">
-                  Warunki i ceny
+                <NavbarLink href="/pl/warunki-ogolne">
+                  Warunki ogólne
                 </NavbarLink>
-                <NavbarLink href="/pl/kontakt">Kontakt</NavbarLink>
+                <NavbarLink href="/pl/cennik">Cennik</NavbarLink>
               </>
             )}
 
