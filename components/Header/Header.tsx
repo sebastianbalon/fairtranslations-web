@@ -87,10 +87,10 @@ const Header: NextPage<Props> = (props: Props) => {
               </>
             )}
 
-            <NavbarLink href="/cs">
+            <NavbarLink href="/cs/o-firme">
               <img src="/images/flag-cz.svg" width="28" height="21" />
             </NavbarLink>
-            <NavbarLink href="/pl">
+            <NavbarLink href="/pl/o-firmie">
               <img src="/images/flag-pl.svg" width="28" height="21" />
             </NavbarLink>
           </div>
