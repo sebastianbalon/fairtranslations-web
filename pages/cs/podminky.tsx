@@ -1,6 +1,6 @@
-import React from 'react';
-import Layout from '../../components/Layout/Layout';
-import { NextPage } from 'next';
+import React from "react";
+import Layout from "../../components/Layout/Layout";
+import { NextPage } from "next";
 
 const Index: NextPage = () => (
   <Layout language="cs">
@@ -17,13 +17,17 @@ const Index: NextPage = () => (
         <li>osobně</li>
       </ul>
 
-
       <h2 className="subtitle is-5">Zpracování zakázky</h2>
-      <p>Obvykle cca 5-10 NS za den (do termínu zpracování se nepočítá den přijetí a odevzdání překladu, svátky, víkendy).</p>
-
+      <p>
+        Obvykle cca 5-10 NS za den (do termínu zpracování se nepočítá den
+        přijetí a odevzdání překladu, svátky, víkendy).
+      </p>
 
       <h2 className="subtitle is-5">Předávání zakázek</h2>
-      <p>Překlad bude odevzdán Vámi požadovaným způsobem a v odsouhlaseném termínu.</p>
+      <p>
+        Překlad bude odevzdán Vámi požadovaným způsobem a v odsouhlaseném
+        termínu.
+      </p>
 
       <h2 className="subtitle is-5">Platba za překlad</h2>
       <strong>Možnosti:</strong>
@@ -33,12 +37,18 @@ const Index: NextPage = () => (
       </ul>
 
       <strong>Důležité:</strong>
-      <p>První objednávku vyhotovím po uhrazení zálohové faktury nebo faktury proforma.
-      Na další zakázky vystavuji faktury s termínem splatnosti 7 dní.
-        V případě stálé spolupráce je fakturace jednou měsíčně, a termín splatnosti je 21 dní.</p>
+      <p>
+        První objednávku vyhotovím po uhrazení zálohové faktury nebo faktury
+        proforma. Na další zakázky vystavuji faktury s termínem splatnosti 7
+        dní. V případě stálé spolupráce je fakturace jednou měsíčně, a termín
+        splatnosti je 21 dní.
+      </p>
 
       <h2 className="subtitle is-5">Důvěrnost informací</h2>
-      <p>Zaručuji Vám uchování informací bezpečným způsobem a dodržování důvěrnosti získaných informací.</p>
+      <p>
+        Zaručuji Vám uchování informací bezpečným způsobem a dodržování
+        důvěrnosti získaných informací.
+      </p>
     </div>
   </Layout>
 );

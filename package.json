@@ -7,7 +7,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o out"
+    "export": "next build && next export -o out",
+    "prettier": "prettier --write \"(components|helpers|pages)/**/*.(ts|tsx)\""
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "@types/react": "^16.9.19",
     "bulma": "^0.8.0",
     "node-sass": "^4.14.1",
+    "prettier": "2.0.5",
     "typescript": "^3.7.5"
   }
 }

@@ -1,24 +1,30 @@
-import React from 'react';
-import Layout from '../../components/Layout/Layout';
-import { NextPage } from 'next';
+import React from "react";
+import Layout from "../../components/Layout/Layout";
+import { NextPage } from "next";
 
 const Index: NextPage = () => (
   <Layout language="cs">
     <div className="content">
       <h1 className="title is-3">Překlady</h1>
 
-      <p>Nabízím služby v rozsahu obyčejných či ověřených (soudních) překladů.</p>
+      <p>
+        Nabízím služby v rozsahu obyčejných či ověřených (soudních) překladů.
+      </p>
 
       <h2 className="subtitle is-5">Obyčejný překlad</h2>
 
-      <p><strong>Způsoby dodání:</strong></p>
+      <p>
+        <strong>Způsoby dodání:</strong>
+      </p>
       <ul>
         <li>e-mailem</li>
         <li>poštou</li>
         <li>osobně</li>
       </ul>
 
-      <p><strong>Způsoby odevzdání hotového překladu:</strong></p>
+      <p>
+        <strong>Způsoby odevzdání hotového překladu:</strong>
+      </p>
       <ul>
         <li>e-mailem</li>
         <li>poštou</li>
@@ -31,7 +37,12 @@ const Index: NextPage = () => (
 
       <p>Způsob dodání: osobně nebo poštou</p>
 
-      <p>Pro vyhotovení ověřeného překladu potřebuji originál nebo notářsky ověřenou kopii dokumentu. Překlad se spojuje a váže šňůrkou s originálem nebo s notářsky ověřenou kopií, připojuje se kulaté razítko soudního tlumočníka, tlumočnická doložka a podpis.</p>
+      <p>
+        Pro vyhotovení ověřeného překladu potřebuji originál nebo notářsky
+        ověřenou kopii dokumentu. Překlad se spojuje a váže šňůrkou s originálem
+        nebo s notářsky ověřenou kopií, připojuje se kulaté razítko soudního
+        tlumočníka, tlumočnická doložka a podpis.
+      </p>
 
       <p>Nejčastěji se vyhotovují soudní překlady následujících dokumentů:</p>
       <ul>
@@ -51,9 +62,15 @@ const Index: NextPage = () => (
         <li>jiné</li>
       </ul>
 
-      <p>Jelikož by vázání překladu mělo být neodlučitelné, u některých důležitých dokumentů (diplomy, rodné listy atd.), doporučuje se dodat místo originálního dokumentu jeho notářskou kopii.</p>
+      <p>
+        Jelikož by vázání překladu mělo být neodlučitelné, u některých
+        důležitých dokumentů (diplomy, rodné listy atd.), doporučuje se dodat
+        místo originálního dokumentu jeho notářskou kopii.
+      </p>
 
-      <p><strong>Lhůty vyhotovení:</strong></p>
+      <p>
+        <strong>Lhůty vyhotovení:</strong>
+      </p>
       <ul>
         <li>standardní</li>
         <li>urychlené</li>

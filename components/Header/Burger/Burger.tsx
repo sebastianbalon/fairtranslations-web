@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { NextPage } from "next";
 
 interface Props extends React.HTMLProps<HTMLDivElement> {
@@ -7,12 +7,14 @@ interface Props extends React.HTMLProps<HTMLDivElement> {
 }
 
 const Burger: NextPage<Props> = (props: Props) => (
-  <a className={"navbar-burger burger" + (props.isActive ? ' is-active' : '')} onClick={props.onClick}>
+  <a
+    className={"navbar-burger burger" + (props.isActive ? " is-active" : "")}
+    onClick={props.onClick}
+  >
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
     <span aria-hidden="true"></span>
   </a>
 );
-
 
 export default Burger;

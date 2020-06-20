@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { NextPage } from "next";
 
 interface Props extends React.HTMLProps<HTMLDivElement> {
@@ -9,13 +9,12 @@ interface Props extends React.HTMLProps<HTMLDivElement> {
 
 const NavbarDropdown: NextPage<Props> = (props: Props) => (
   <div className="navbar-item has-dropdown is-hoverable">
-    <a className="navbar-link" href={props.href || '#'}>{props.title}</a>
+    <a className="navbar-link" href={props.href || "#"}>
+      {props.title}
+    </a>
 
-    <div className="navbar-dropdown">
-      {props.children}
-    </div>
+    <div className="navbar-dropdown">{props.children}</div>
   </div>
 );
-
 
 export default NavbarDropdown;
