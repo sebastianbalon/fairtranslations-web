@@ -11,10 +11,15 @@ const Index: NextPage = () => (
       <p>Vítejte na mých stránkách,</p>
 
       <p>
-        jmenuji se Jolanta Tarabová. Překladům a tlumočení se věnuji více než 10
+        jmenuji se Jolanta Tarabová. Překladům a tlumočení se věnuji více než 15
         let, a to od roku 1999. V letech 1999-2006 jsem se této práci věnovala v
         rámci zaměstnání v českých firmách s polským kapitálem, následně od roku
         2006 na vlastní účet.
+      </p>
+
+      <p>
+        Jsem rodilá mluvčí jazyka polského a absolventka polské filologie na
+        Jagellonské univerzitě v Krakově.
       </p>
 
       <p>
@@ -39,7 +44,7 @@ const Index: NextPage = () => (
                   <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
                 </td>
                 <td>
-                  <strong>čeština</strong>, ruština, ukrajinština
+                  <strong>čeština</strong>
                 </td>
               </tr>
               <tr>
@@ -50,7 +55,7 @@ const Index: NextPage = () => (
                   <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
                 </td>
                 <td>
-                  <strong>polština</strong>, ruština, ukrajinština
+                  <strong>polština</strong>
                 </td>
               </tr>
               <tr>
@@ -59,20 +64,6 @@ const Index: NextPage = () => (
                   <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
                 </td>
                 <td>polština</td>
-              </tr>
-              <tr>
-                <td>ruština</td>
-                <td>
-                  <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
-                </td>
-                <td>čeština, polština</td>
-              </tr>
-              <tr>
-                <td>ukrajinština</td>
-                <td>
-                  <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
-                </td>
-                <td>čeština, polština</td>
               </tr>
             </tbody>
           </table>

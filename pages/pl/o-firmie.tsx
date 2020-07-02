@@ -35,7 +35,7 @@ const Index: NextPage = () => (
                   <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
                 </td>
                 <td>
-                  <strong>czeski</strong>, rosyjski, ukraiński
+                  <strong>czeski</strong>
                 </td>
               </tr>
               <tr>
@@ -46,7 +46,7 @@ const Index: NextPage = () => (
                   <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
                 </td>
                 <td>
-                  <strong>polski</strong>, rosyjski, ukraiński
+                  <strong>polski</strong>
                 </td>
               </tr>
               <tr>
@@ -55,20 +55,6 @@ const Index: NextPage = () => (
                   <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
                 </td>
                 <td>polski</td>
-              </tr>
-              <tr>
-                <td>rosyjski</td>
-                <td>
-                  <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
-                </td>
-                <td>czeski, polski</td>
-              </tr>
-              <tr>
-                <td>ukraiński</td>
-                <td>
-                  <FontAwesomeIcon icon={faLongArrowAltRight} size="1x" />
-                </td>
-                <td>czeski, polski</td>
               </tr>
             </tbody>
           </table>

@@ -28,6 +28,13 @@ const Card: React.FC<Props> = (props: Props) => {
 
   const imageSrc = `/images/image${imageNumber}.${props.language}.jpg`;
 
+  const phone =
+    props.language === "cs" ? "+420 737 96 13 76" : "+48 733 669 641";
+  const whatsApp =
+    props.language === "cs"
+      ? "https://wa.me/420737961376"
+      : "https://wa.me/48733669641";
+
   return (
     <div className="card rounded-corners">
       <div className="card-image">
@@ -84,7 +91,7 @@ const Card: React.FC<Props> = (props: Props) => {
                 )}
                 <tr>
                   <th>Tel.</th>
-                  <td>+420 737 96 13 76</td>
+                  <td>{phone}</td>
                 </tr>
                 <tr>
                   <th>E-mail</th>
@@ -106,9 +113,9 @@ const Card: React.FC<Props> = (props: Props) => {
                 <tr>
                   <th>WhatsApp</th>
                   <td>
-                    <a href="https://wa.me/420737961376">
+                    <a href={whatsApp}>
                       <FontAwesomeIcon icon={faWhatsapp} size="1x" />
-                      &nbsp;+420 737 96 13 76
+                      &nbsp;{phone}
                     </a>
                   </td>
                 </tr>

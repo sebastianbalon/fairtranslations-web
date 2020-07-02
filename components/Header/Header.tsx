@@ -43,8 +43,11 @@ const Header: NextPage<Props> = (props: Props) => {
                 </NavbarDropdown>
                 <NavbarDropdown
                   title="Jiné služby"
-                  href="/cs/zprostredkovani-sluzby-telefonovani-do-polska"
+                  href="/cs/tlumocnicky-doprovod-na-obchodnich-jednanich-v-polsku"
                 >
+                  <NavbarLink href="/cs/tlumocnicky-doprovod-na-obchodnich-jednanich-v-polsku">
+                    Tlumočnický doprovod na obchodních jednáních v Polsku
+                  </NavbarLink>
                   <NavbarLink href="/cs/zprostredkovani-sluzby-telefonovani-do-polska">
                     Zprostředkování služby telefonování do Polska
                   </NavbarLink>
