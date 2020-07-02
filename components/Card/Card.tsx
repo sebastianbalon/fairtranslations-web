@@ -30,10 +30,6 @@ const Card: React.FC<Props> = (props: Props) => {
 
   const phone =
     props.language === "cs" ? "+420 737 96 13 76" : "+48 733 669 641";
-  const whatsApp =
-    props.language === "cs"
-      ? "https://wa.me/420737961376"
-      : "https://wa.me/48733669641";
 
   return (
     <div className="card rounded-corners">
@@ -113,9 +109,9 @@ const Card: React.FC<Props> = (props: Props) => {
                 <tr>
                   <th>WhatsApp</th>
                   <td>
-                    <a href={whatsApp}>
+                    <a href="https://wa.me/420737961376">
                       <FontAwesomeIcon icon={faWhatsapp} size="1x" />
-                      &nbsp;{phone}
+                      &nbsp;+420 737 96 13 76
                     </a>
                   </td>
                 </tr>
