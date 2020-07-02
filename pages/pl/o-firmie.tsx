@@ -14,7 +14,7 @@ const Index: NextPage = () => (
         Nazywam się Jolanta Tarabova. Tłumaczę od roku 1999. Najpierw w latach
         1999 – 2006 w ramach zatrudnienia w czeskich firmach z polskim
         kapitałem, następnie od roku 2006 na własny rachunek, prowadząc
-        działalność gospodarczą. Od roku 2006 jestem także tłumaczem przysięgłym
+        działalność gospodarczą. Od roku 2006 jestem także tłumaczem przysięgłym
         języka polskiego w Czechach.
       </p>
 
