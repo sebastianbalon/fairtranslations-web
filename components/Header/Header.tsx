@@ -13,6 +13,12 @@ const Header: NextPage<Props> = (props: Props) => {
 
   const onBurgerPressHandler = () => setBurgerActive(!isBurgerActive);
 
+  const title =
+    "FairTranslations, Mgr. Jolanta Tarabová, " +
+    (props.language === "cs"
+      ? "Překlady a tlumočení"
+      : "Tłumaczenia ustne i pisemne");
+
   return (
     <>
       <nav className="navbar is-white">
@@ -20,9 +26,10 @@ const Header: NextPage<Props> = (props: Props) => {
           <a className="" href="/">
             <img
               src="/images/logo1.svg"
-              alt="FairTranslations | Mgr. Jolanta Tarabová"
               width="331"
               height="85"
+              title={title}
+              alt={title}
             />
           </a>
 
@@ -91,10 +98,24 @@ const Header: NextPage<Props> = (props: Props) => {
             )}
 
             <NavbarLink href="/cs/o-firme">
-              <img src="/images/flag-cz.svg" width="28" height="21" />
+              <img
+                src="/images/flag-cz.svg"
+                className="rounded-corners has-shadow"
+                width="28"
+                height="21"
+                title="Česká verze"
+                alt="Česká verze"
+              />
             </NavbarLink>
             <NavbarLink href="/pl/o-firmie">
-              <img src="/images/flag-pl.svg" width="28" height="21" />
+              <img
+                src="/images/flag-pl.svg"
+                className="rounded-corners has-shadow"
+                width="28"
+                height="21"
+                title="Polska wersja"
+                alt="Polska wersja"
+              />
             </NavbarLink>
           </div>
         </div>

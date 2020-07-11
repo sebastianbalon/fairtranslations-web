@@ -31,6 +31,12 @@ const Card: React.FC<Props> = (props: Props) => {
   const phone =
     props.language === "cs" ? "+420 737 96 13 76" : "+48 733 669 641";
 
+  const imageTitle =
+    "FairTranslations, Mgr. Jolanta Tarabová, " +
+    (props.language === "cs"
+      ? "Překlady a tlumočení"
+      : "Tłumaczenia ustne i pisemne");
+
   return (
     <div className="card rounded-corners">
       <div className="card-image">
@@ -43,6 +49,8 @@ const Card: React.FC<Props> = (props: Props) => {
                 width="100%"
                 height="100%"
                 className="rounded-corners-top"
+                title={imageTitle}
+                alt={imageTitle}
               />
             </CSSTransition>
           </SwitchTransition>
