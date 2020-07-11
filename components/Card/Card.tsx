@@ -137,6 +137,14 @@ const Card: React.FC<Props> = (props: Props) => {
             src="https://frame.mapy.cz/s/cuvumakuve"
             width="100%"
           />
+          <figure className="image">
+            <img
+              src="/images/sdl-logo.png"
+              id="sdl-logo"
+              title="I work with SDL*Trados Studio"
+              alt="I work with SDL*Trados Studio"
+            />
+          </figure>
         </div>
       </div>
     </div>
