@@ -18,10 +18,10 @@ h1, h2, h3
   font-family: 'Merriweather', serif
   font-weight: 300
 
-a:not(.navbar-item)
+a:not(.navbar-item):not(.navbar-link)
   color: #ff662e
 
-a:visited:not(.navbar-item)
+a:visited:not(.navbar-item):not(.navbar-link)
   color: #b54a02
 
 .navbar-divider
@@ -41,10 +41,13 @@ $borderRadius: 5px
   border-top-left-radius: $borderRadius
   border-top-right-radius: $borderRadius
 
-.has-shadow
+@mixin shadow
   -webkit-box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.1)
   -moz-box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.1)
   box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.1)
+
+.has-shadow
+  @include shadow
 
 .fade-enter
   opacity: 0
