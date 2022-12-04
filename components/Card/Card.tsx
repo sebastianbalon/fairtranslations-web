@@ -5,7 +5,7 @@ import {
   faSkype,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { SwitchTransition, CSSTransition } from "react-transition-group";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 interface Props {
   language: "cs" | "pl";
@@ -29,7 +29,7 @@ const Card: React.FC<Props> = (props: Props) => {
   const imageSrc = `/images/image${imageNumber}.${props.language}.jpg`;
 
   const phone =
-    props.language === "cs" ? "+420 737 96 13 76" : "+48 733 669 641";
+    props.language === "cs" ? "+420 737 96 13 76" : "+48 733 669 641";
 
   const imageTitle =
     "FairTranslations, Mgr. Jolanta Tarabová, " +

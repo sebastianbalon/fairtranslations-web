@@ -45,6 +45,9 @@ const Header: NextPage<Props> = (props: Props) => {
                   title="Překlady a tlumočení"
                   href="/cs/preklady"
                 >
+                  <NavbarLink href="/cs/sluzba-elektronickeho-soudniho-prekladu">
+                    Novinka – služba elektronického soudního překladu
+                  </NavbarLink>
                   <NavbarLink href="/cs/preklady">Překlady</NavbarLink>
                   <NavbarLink href="/cs/tlumoceni">Tlumočení</NavbarLink>
                 </NavbarDropdown>
