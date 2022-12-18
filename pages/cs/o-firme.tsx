@@ -19,7 +19,7 @@ const Index: NextPage = () => (
 
       <p>
         Jsem rodilá mluvčí jazyka polského a absolventka polské filologie na
-        Jagellonské univerzitě v Krakově.
+        Jagellonské univerzitě v Krakově
       </p>
 
       <p>
