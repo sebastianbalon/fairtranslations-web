@@ -8,7 +8,7 @@ const Index: NextPage = () => (
   <Layout language="cs">
     <div className="content">
       <h1 className="title is-3">O firmě</h1>
-      <p>Vítejte na mých stránkách,</p>
+      <p>Vítejte na mých stránkách, </p>
 
       <p>
         jmenuji se Jolanta Tarabová. Překladům a tlumočení se věnuji více než 15
