@@ -8,8 +8,8 @@ interface Props extends React.HTMLProps<HTMLDivElement> {
 }
 
 const NavbarLink: NextPage<Props> = (props: Props) => (
-  <Link href={props.href}>
-    <a className="navbar-item">{props.children}</a>
+  <Link href={props.href} className="navbar-item">
+    {props.children}
   </Link>
 );
 

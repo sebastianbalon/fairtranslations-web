@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/"
+  to = "/cs/o-firme"
+  status = 200
+
+[[redirects]]
+  from = "/cs"
+  to = "/cs/o-firme"
+  status = 301
+
+[[redirects]]
+  from = "/pl"
+  to = "/pl/o-firmie"
+  status = 301

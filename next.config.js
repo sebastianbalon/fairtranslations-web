@@ -1,8 +1,25 @@
-const withSass = require('@zeit/next-sass');
-const withCss = require('@zeit/next-css');
-
-module.exports = {
-  exportTrailingSlash: false,
-  target: 'serverless',
-  ...withSass(withCss()),
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  trailingSlash: false,
+  async rewrites() {
+    return [{
+      source: '/',
+      destination: '/cs/o-firme',
+    }];
+  },
+  async redirects() {
+    return [{
+      source: '/cs',
+      destination: '/cs/o-firme',
+      permanent: true,
+    }, {
+      source: '/pl',
+      destination: '/pl/o-firme',
+      permanent: true,
+    }];
+  }
 }
+
+module.exports = nextConfig
