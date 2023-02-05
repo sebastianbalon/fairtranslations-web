@@ -5,56 +5,47 @@ import {
   faSkype,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
+import ImageCarousel from "./ImageCarousel";
 
 interface Props {
   language: "cs" | "pl";
 }
 
-const NUMBER_OF_IMAGES = 4;
-
 const Card: React.FC<Props> = (props: Props) => {
-  const [imageNumber, setImageNumber] = React.useState<number>(1);
+  const [imageWidth, setImageWidth] = React.useState<number | undefined>(
+    undefined
+  );
+  const [imageHeight, setImageHeight] = React.useState<number | undefined>(
+    undefined
+  );
+  const imageRef = React.useRef<HTMLDivElement>();
+
+  const setImageSize = () => {
+    setImageWidth(imageRef.current?.clientWidth);
+    setImageHeight(imageRef.current?.clientHeight);
+  };
 
   React.useEffect(() => {
-    const interval = setInterval(() => {
-      setImageNumber((imageNumber) =>
-        imageNumber < NUMBER_OF_IMAGES ? imageNumber + 1 : 1
-      );
-    }, 8000);
-
-    return () => clearInterval(interval);
+    window.addEventListener("resize", () => {
+      setImageSize();
+    });
   }, []);
-
-  const imageSrc = `/images/image${imageNumber}.${props.language}.jpg`;
 
   const phone =
     props.language === "cs" ? "+420 737 96 13 76" : "+48 733 669 641";
 
-  const imageTitle =
-    "FairTranslations, Mgr. Jolanta Tarabová, " +
-    (props.language === "cs"
-      ? "Překlady a tlumočení"
-      : "Tłumaczenia ustne i pisemne");
-
   return (
     <div className="card rounded-corners">
-      <div className="card-image">
-        <figure className="image">
-          <SwitchTransition>
-            <CSSTransition key={imageSrc} classNames="fade" timeout={300}>
-              <img
-                key="image"
-                src={imageSrc}
-                width="100%"
-                height="100%"
-                className="rounded-corners-top"
-                title={imageTitle}
-                alt={imageTitle}
-              />
-            </CSSTransition>
-          </SwitchTransition>
-        </figure>
+      <div
+        className="card-image rounded-corners"
+        ref={imageRef}
+        onLoad={setImageSize}
+      >
+        <ImageCarousel
+          language={props.language}
+          width={imageWidth}
+          height={imageHeight}
+        />
       </div>
 
       <div className="card-content">
@@ -100,9 +91,7 @@ const Card: React.FC<Props> = (props: Props) => {
                 <tr>
                   <th>E-mail</th>
                   <td>
-                    <a href="mailto:jolanta@tarabova.eu">
-                      jolanta@tarabova.eu
-                    </a>
+                    <a href="mailto:jolanta@tarabova.eu">jolanta@tarabova.eu</a>
                   </td>
                 </tr>
                 <tr>
