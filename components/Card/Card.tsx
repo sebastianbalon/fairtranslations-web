@@ -100,8 +100,8 @@ const Card: React.FC<Props> = (props: Props) => {
                 <tr>
                   <th>E-mail</th>
                   <td>
-                    <a href="mailto:info@fairtranslations.com">
-                      info@fairtranslations.com
+                    <a href="mailto:jolanta@tarabova.eu">
+                      jolanta@tarabova.eu
                     </a>
                   </td>
                 </tr>
